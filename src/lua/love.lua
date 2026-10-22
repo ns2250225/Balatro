@@ -12,7 +12,8 @@ loadstring = loadstring or load
 -- which the original game targets, walks the array part in index order - UI
 -- layouts (UIBox:set_parent_child), scoring loops and event queues depend on
 -- it. Override pairs to iterate exact arrays 1..n in order; every other table
--- keeps the engine's iteration order. __pairs metamethods still win.
+-- keeps the engine's iteration order. __pairs metamethods still win. Arrays
+-- that shrink DURING iteration are handled by skipping nil slots (see below).
 do
   local _pairs, _next, _type, _rawget = pairs, next, type, rawget
   local _rawlen = rawlen or function(t) return #t end
@@ -33,8 +34,17 @@ do
     if not is_array or seen ~= n then return _pairs(t, ...) end
     local i = 0
     return function(tt)
-      i = i + 1
-      if i <= n then return i, _rawget(tt, i) end
+      -- Slots can legitimately become nil mid-iteration: game code calls
+      -- table.remove(G.MOVEABLES, k) from inside the update loop (Card:update
+      -- dropping its focused_ui / alert UIBoxes, e.g. after skipping a blind).
+      -- next() never yields nil values - a nil slot is simply not a key - so
+      -- skip holes instead of handing nil to the caller (which would be an
+      -- "attempt to index a nil value" crash at the call site).
+      while i < n do
+        i = i + 1
+        local v = _rawget(tt, i)
+        if v ~= nil then return i, v end
+      end
     end, t, nil
   end
 end
