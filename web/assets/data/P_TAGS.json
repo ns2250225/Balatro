@@ -1,0 +1,345 @@
+{
+"tag_boss": {
+"config": {
+"type": "new_blind_choice"
+},
+"discovered": false,
+"name": "Boss Tag",
+"order": 9,
+"pos": {
+"x": 0,
+"y": 2
+},
+"set": "Tag"
+},
+"tag_buffoon": {
+"config": {
+"type": "new_blind_choice"
+},
+"discovered": false,
+"min_ante": 2,
+"name": "Buffoon Tag",
+"order": 13,
+"pos": {
+"x": 4,
+"y": 2
+},
+"set": "Tag"
+},
+"tag_charm": {
+"config": {
+"type": "new_blind_choice"
+},
+"discovered": false,
+"name": "Charm Tag",
+"order": 11,
+"pos": {
+"x": 2,
+"y": 2
+},
+"set": "Tag"
+},
+"tag_coupon": {
+"config": {
+"type": "shop_final_pass"
+},
+"discovered": false,
+"name": "Coupon Tag",
+"order": 17,
+"pos": {
+"x": 4,
+"y": 0
+},
+"set": "Tag"
+},
+"tag_d_six": {
+"config": {
+"type": "shop_start"
+},
+"discovered": false,
+"name": "D6 Tag",
+"order": 20,
+"pos": {
+"x": 5,
+"y": 3
+},
+"set": "Tag"
+},
+"tag_double": {
+"config": {
+"type": "tag_add"
+},
+"discovered": false,
+"name": "Double Tag",
+"order": 18,
+"pos": {
+"x": 5,
+"y": 0
+},
+"set": "Tag"
+},
+"tag_economy": {
+"config": {
+"max": 40,
+"type": "immediate"
+},
+"discovered": false,
+"name": "Economy Tag",
+"order": 24,
+"pos": {
+"x": 4,
+"y": 3
+},
+"set": "Tag"
+},
+"tag_ethereal": {
+"config": {
+"type": "new_blind_choice"
+},
+"discovered": false,
+"min_ante": 2,
+"name": "Ethereal Tag",
+"order": 16,
+"pos": {
+"x": 3,
+"y": 3
+},
+"set": "Tag"
+},
+"tag_foil": {
+"config": {
+"edition": "foil",
+"odds": 2,
+"type": "store_joker_modify"
+},
+"discovered": false,
+"name": "Foil Tag",
+"order": 4,
+"pos": {
+"x": 3,
+"y": 0
+},
+"requires": "e_foil",
+"set": "Tag"
+},
+"tag_garbage": {
+"config": {
+"dollars_per_discard": 1,
+"type": "immediate"
+},
+"discovered": false,
+"min_ante": 2,
+"name": "Garbage Tag",
+"order": 15,
+"pos": {
+"x": 2,
+"y": 3
+},
+"set": "Tag"
+},
+"tag_handy": {
+"config": {
+"dollars_per_hand": 1,
+"type": "immediate"
+},
+"discovered": false,
+"min_ante": 2,
+"name": "Handy Tag",
+"order": 14,
+"pos": {
+"x": 1,
+"y": 3
+},
+"set": "Tag"
+},
+"tag_holo": {
+"config": {
+"edition": "holo",
+"odds": 3,
+"type": "store_joker_modify"
+},
+"discovered": false,
+"name": "Holographic Tag",
+"order": 5,
+"pos": {
+"x": 0,
+"y": 1
+},
+"requires": "e_holo",
+"set": "Tag"
+},
+"tag_investment": {
+"config": {
+"dollars": 25,
+"type": "eval"
+},
+"discovered": false,
+"name": "Investment Tag",
+"order": 7,
+"pos": {
+"x": 2,
+"y": 1
+},
+"set": "Tag"
+},
+"tag_juggle": {
+"config": {
+"h_size": 3,
+"type": "round_start_bonus"
+},
+"discovered": false,
+"name": "Juggle Tag",
+"order": 19,
+"pos": {
+"x": 5,
+"y": 1
+},
+"set": "Tag"
+},
+"tag_meteor": {
+"config": {
+"type": "new_blind_choice"
+},
+"discovered": false,
+"min_ante": 2,
+"name": "Meteor Tag",
+"order": 12,
+"pos": {
+"x": 3,
+"y": 2
+},
+"set": "Tag"
+},
+"tag_negative": {
+"config": {
+"edition": "negative",
+"odds": 5,
+"type": "store_joker_modify"
+},
+"discovered": false,
+"min_ante": 2,
+"name": "Negative Tag",
+"order": 3,
+"pos": {
+"x": 2,
+"y": 0
+},
+"requires": "e_negative",
+"set": "Tag"
+},
+"tag_orbital": {
+"config": {
+"levels": 3,
+"type": "immediate"
+},
+"discovered": false,
+"min_ante": 2,
+"name": "Orbital Tag",
+"order": 23,
+"pos": {
+"x": 5,
+"y": 2
+},
+"set": "Tag"
+},
+"tag_polychrome": {
+"config": {
+"edition": "polychrome",
+"odds": 4,
+"type": "store_joker_modify"
+},
+"discovered": false,
+"name": "Polychrome Tag",
+"order": 6,
+"pos": {
+"x": 1,
+"y": 1
+},
+"requires": "e_polychrome",
+"set": "Tag"
+},
+"tag_rare": {
+"config": {
+"odds": 3,
+"type": "store_joker_create"
+},
+"discovered": false,
+"name": "Rare Tag",
+"order": 2,
+"pos": {
+"x": 1,
+"y": 0
+},
+"requires": "j_blueprint",
+"set": "Tag"
+},
+"tag_skip": {
+"config": {
+"skip_bonus": 5,
+"type": "immediate"
+},
+"discovered": false,
+"name": "Skip Tag",
+"order": 22,
+"pos": {
+"x": 0,
+"y": 3
+},
+"set": "Tag"
+},
+"tag_standard": {
+"config": {
+"type": "new_blind_choice"
+},
+"discovered": false,
+"min_ante": 2,
+"name": "Standard Tag",
+"order": 10,
+"pos": {
+"x": 1,
+"y": 2
+},
+"set": "Tag"
+},
+"tag_top_up": {
+"config": {
+"spawn_jokers": 2,
+"type": "immediate"
+},
+"discovered": false,
+"min_ante": 2,
+"name": "Top-up Tag",
+"order": 21,
+"pos": {
+"x": 4,
+"y": 1
+},
+"set": "Tag"
+},
+"tag_uncommon": {
+"config": {
+"type": "store_joker_create"
+},
+"discovered": false,
+"name": "Uncommon Tag",
+"order": 1,
+"pos": {
+"x": 0,
+"y": 0
+},
+"set": "Tag"
+},
+"tag_voucher": {
+"config": {
+"type": "voucher_add"
+},
+"discovered": false,
+"name": "Voucher Tag",
+"order": 8,
+"pos": {
+"x": 3,
+"y": 1
+},
+"set": "Tag"
+}
+}

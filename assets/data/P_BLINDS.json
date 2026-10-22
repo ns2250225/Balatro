@@ -1,0 +1,553 @@
+{
+"bl_arm": {
+"boss": {
+"max": 10,
+"min": 2
+},
+"boss_colour": "6865f3",
+"debuff": {},
+"defeated": false,
+"dollars": 5,
+"mult": 2,
+"name": "The Arm",
+"order": 8,
+"pos": {
+"x": 0,
+"y": 11
+},
+"vars": {}
+},
+"bl_big": {
+"debuff": {},
+"debuff_text": "",
+"defeated": false,
+"dollars": 4,
+"mult": 1.5,
+"name": "Big Blind",
+"order": 2,
+"pos": {
+"x": 0,
+"y": 1
+},
+"vars": {}
+},
+"bl_club": {
+"boss": {
+"max": 10,
+"min": 1
+},
+"boss_colour": "b9cb92",
+"debuff": {
+"suit": "Clubs"
+},
+"defeated": false,
+"dollars": 5,
+"mult": 2,
+"name": "The Club",
+"order": 9,
+"pos": {
+"x": 0,
+"y": 4
+},
+"vars": {}
+},
+"bl_eye": {
+"boss": {
+"max": 10,
+"min": 3
+},
+"boss_colour": "4b71e4",
+"debuff": {},
+"defeated": false,
+"dollars": 5,
+"mult": 2,
+"name": "The Eye",
+"order": 16,
+"pos": {
+"x": 0,
+"y": 17
+},
+"vars": {}
+},
+"bl_final_acorn": {
+"boss": {
+"max": 10,
+"min": 10,
+"showdown": true
+},
+"boss_colour": "fda200",
+"debuff": {},
+"defeated": false,
+"dollars": 8,
+"mult": 2,
+"name": "Amber Acorn",
+"order": 26,
+"pos": {
+"x": 0,
+"y": 27
+},
+"vars": {}
+},
+"bl_final_bell": {
+"boss": {
+"max": 10,
+"min": 10,
+"showdown": true
+},
+"boss_colour": "009cfd",
+"debuff": {},
+"defeated": false,
+"dollars": 8,
+"mult": 2,
+"name": "Cerulean Bell",
+"order": 30,
+"pos": {
+"x": 0,
+"y": 26
+},
+"vars": {}
+},
+"bl_final_heart": {
+"boss": {
+"max": 10,
+"min": 10,
+"showdown": true
+},
+"boss_colour": "ac3232",
+"debuff": {},
+"defeated": false,
+"dollars": 8,
+"mult": 2,
+"name": "Crimson Heart",
+"order": 29,
+"pos": {
+"x": 0,
+"y": 25
+},
+"vars": {}
+},
+"bl_final_leaf": {
+"boss": {
+"max": 10,
+"min": 10,
+"showdown": true
+},
+"boss_colour": "56a786",
+"debuff": {},
+"defeated": false,
+"dollars": 8,
+"mult": 2,
+"name": "Verdant Leaf",
+"order": 27,
+"pos": {
+"x": 0,
+"y": 28
+},
+"vars": {}
+},
+"bl_final_vessel": {
+"boss": {
+"max": 10,
+"min": 10,
+"showdown": true
+},
+"boss_colour": "8a71e1",
+"debuff": {},
+"defeated": false,
+"dollars": 8,
+"mult": 6,
+"name": "Violet Vessel",
+"order": 28,
+"pos": {
+"x": 0,
+"y": 29
+},
+"vars": {}
+},
+"bl_fish": {
+"boss": {
+"max": 10,
+"min": 2
+},
+"boss_colour": "3e85bd",
+"debuff": {},
+"defeated": false,
+"dollars": 5,
+"mult": 2,
+"name": "The Fish",
+"order": 10,
+"pos": {
+"x": 0,
+"y": 5
+},
+"vars": {}
+},
+"bl_flint": {
+"boss": {
+"max": 10,
+"min": 2
+},
+"boss_colour": "e56a2f",
+"debuff": {},
+"defeated": false,
+"dollars": 5,
+"mult": 2,
+"name": "The Flint",
+"order": 24,
+"pos": {
+"x": 0,
+"y": 24
+},
+"vars": {}
+},
+"bl_goad": {
+"boss": {
+"max": 10,
+"min": 1
+},
+"boss_colour": "b95c96",
+"debuff": {
+"suit": "Spades"
+},
+"defeated": false,
+"dollars": 5,
+"mult": 2,
+"name": "The Goad",
+"order": 12,
+"pos": {
+"x": 0,
+"y": 13
+},
+"vars": {}
+},
+"bl_head": {
+"boss": {
+"max": 10,
+"min": 1
+},
+"boss_colour": "ac9db4",
+"debuff": {
+"suit": "Hearts"
+},
+"defeated": false,
+"dollars": 5,
+"mult": 2,
+"name": "The Head",
+"order": 22,
+"pos": {
+"x": 0,
+"y": 21
+},
+"vars": {}
+},
+"bl_hook": {
+"boss": {
+"max": 10,
+"min": 1
+},
+"boss_colour": "a84024",
+"debuff": {},
+"defeated": false,
+"dollars": 5,
+"mult": 2,
+"name": "The Hook",
+"order": 3,
+"pos": {
+"x": 0,
+"y": 7
+},
+"vars": {}
+},
+"bl_house": {
+"boss": {
+"max": 10,
+"min": 2
+},
+"boss_colour": "5186a8",
+"debuff": {},
+"defeated": false,
+"dollars": 5,
+"mult": 2,
+"name": "The House",
+"order": 5,
+"pos": {
+"x": 0,
+"y": 3
+},
+"vars": {}
+},
+"bl_manacle": {
+"boss": {
+"max": 10,
+"min": 1
+},
+"boss_colour": "575757",
+"debuff": {},
+"defeated": false,
+"dollars": 5,
+"mult": 2,
+"name": "The Manacle",
+"order": 15,
+"pos": {
+"x": 0,
+"y": 8
+},
+"vars": {}
+},
+"bl_mark": {
+"boss": {
+"max": 10,
+"min": 2
+},
+"boss_colour": "6a3847",
+"debuff": {},
+"defeated": false,
+"dollars": 5,
+"mult": 2,
+"name": "The Mark",
+"order": 25,
+"pos": {
+"x": 0,
+"y": 23
+},
+"vars": {}
+},
+"bl_mouth": {
+"boss": {
+"max": 10,
+"min": 2
+},
+"boss_colour": "ae718e",
+"debuff": {},
+"defeated": false,
+"dollars": 5,
+"mult": 2,
+"name": "The Mouth",
+"order": 17,
+"pos": {
+"x": 0,
+"y": 18
+},
+"vars": {}
+},
+"bl_needle": {
+"boss": {
+"max": 10,
+"min": 2
+},
+"boss_colour": "5c6e31",
+"debuff": {},
+"defeated": false,
+"dollars": 5,
+"mult": 1,
+"name": "The Needle",
+"order": 21,
+"pos": {
+"x": 0,
+"y": 20
+},
+"vars": {}
+},
+"bl_ox": {
+"boss": {
+"max": 10,
+"min": 6
+},
+"boss_colour": "b95b08",
+"debuff": {},
+"defeated": false,
+"dollars": 5,
+"mult": 2,
+"name": "The Ox",
+"order": 4,
+"pos": {
+"x": 0,
+"y": 2
+},
+"vars": [
+""
+]
+},
+"bl_pillar": {
+"boss": {
+"max": 10,
+"min": 1
+},
+"boss_colour": "7e6752",
+"debuff": {},
+"defeated": false,
+"dollars": 5,
+"mult": 2,
+"name": "The Pillar",
+"order": 20,
+"pos": {
+"x": 0,
+"y": 16
+},
+"vars": {}
+},
+"bl_plant": {
+"boss": {
+"max": 10,
+"min": 4
+},
+"boss_colour": "709284",
+"debuff": {
+"is_face": "face"
+},
+"defeated": false,
+"dollars": 5,
+"mult": 2,
+"name": "The Plant",
+"order": 18,
+"pos": {
+"x": 0,
+"y": 19
+},
+"vars": {}
+},
+"bl_psychic": {
+"boss": {
+"max": 10,
+"min": 1
+},
+"boss_colour": "efc03c",
+"debuff": {
+"h_size_ge": 5
+},
+"defeated": false,
+"dollars": 5,
+"mult": 2,
+"name": "The Psychic",
+"order": 11,
+"pos": {
+"x": 0,
+"y": 12
+},
+"vars": {}
+},
+"bl_serpent": {
+"boss": {
+"max": 10,
+"min": 5
+},
+"boss_colour": "439a4f",
+"debuff": {},
+"defeated": false,
+"dollars": 5,
+"mult": 2,
+"name": "The Serpent",
+"order": 19,
+"pos": {
+"x": 0,
+"y": 15
+},
+"vars": {}
+},
+"bl_small": {
+"debuff": {},
+"debuff_text": "",
+"defeated": false,
+"dollars": 3,
+"mult": 1,
+"name": "Small Blind",
+"order": 1,
+"pos": {
+"x": 0,
+"y": 0
+},
+"vars": {}
+},
+"bl_tooth": {
+"boss": {
+"max": 10,
+"min": 3
+},
+"boss_colour": "b52d2d",
+"debuff": {},
+"defeated": false,
+"dollars": 5,
+"mult": 2,
+"name": "The Tooth",
+"order": 23,
+"pos": {
+"x": 0,
+"y": 22
+},
+"vars": {}
+},
+"bl_wall": {
+"boss": {
+"max": 10,
+"min": 2
+},
+"boss_colour": "8a59a5",
+"debuff": {},
+"defeated": false,
+"dollars": 5,
+"mult": 4,
+"name": "The Wall",
+"order": 6,
+"pos": {
+"x": 0,
+"y": 9
+},
+"vars": {}
+},
+"bl_water": {
+"boss": {
+"max": 10,
+"min": 2
+},
+"boss_colour": "c6e0eb",
+"debuff": {},
+"defeated": false,
+"dollars": 5,
+"mult": 2,
+"name": "The Water",
+"order": 13,
+"pos": {
+"x": 0,
+"y": 14
+},
+"vars": {}
+},
+"bl_wheel": {
+"boss": {
+"max": 10,
+"min": 2
+},
+"boss_colour": "50bf7c",
+"debuff": {},
+"defeated": false,
+"dollars": 5,
+"mult": 2,
+"name": "The Wheel",
+"order": 7,
+"pos": {
+"x": 0,
+"y": 10
+},
+"vars": {}
+},
+"bl_window": {
+"boss": {
+"max": 10,
+"min": 1
+},
+"boss_colour": "a9a295",
+"debuff": {
+"suit": "Diamonds"
+},
+"defeated": false,
+"dollars": 5,
+"mult": 2,
+"name": "The Window",
+"order": 14,
+"pos": {
+"x": 0,
+"y": 6
+},
+"vars": {}
+}
+}

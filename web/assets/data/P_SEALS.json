@@ -1,0 +1,22 @@
+{
+"Blue": {
+"discovered": false,
+"order": 3,
+"set": "Seal"
+},
+"Gold": {
+"discovered": false,
+"order": 1,
+"set": "Seal"
+},
+"Purple": {
+"discovered": false,
+"order": 4,
+"set": "Seal"
+},
+"Red": {
+"discovered": false,
+"order": 2,
+"set": "Seal"
+}
+}

@@ -1,0 +1,678 @@
+{
+ "STOP_USE": 0,
+ "bankrupt_at": 0,
+ "banned_keys": {},
+ "base_reroll_cost": 5,
+ "bosses_used": {
+  "bl_arm": 0,
+  "bl_club": 0,
+  "bl_eye": 0,
+  "bl_final_acorn": 0,
+  "bl_final_bell": 0,
+  "bl_final_heart": 0,
+  "bl_final_leaf": 0,
+  "bl_final_vessel": 0,
+  "bl_fish": 0,
+  "bl_flint": 0,
+  "bl_goad": 0,
+  "bl_head": 0,
+  "bl_hook": 0,
+  "bl_house": 0,
+  "bl_manacle": 0,
+  "bl_mark": 0,
+  "bl_mouth": 0,
+  "bl_needle": 0,
+  "bl_ox": 0,
+  "bl_pillar": 0,
+  "bl_plant": 0,
+  "bl_psychic": 0,
+  "bl_serpent": 0,
+  "bl_tooth": 0,
+  "bl_wall": 0,
+  "bl_water": 0,
+  "bl_wheel": 0,
+  "bl_window": 0
+ },
+ "cards_played": {
+  "10": {
+   "suits": {},
+   "total": 0
+  },
+  "2": {
+   "suits": {},
+   "total": 0
+  },
+  "3": {
+   "suits": {},
+   "total": 0
+  },
+  "4": {
+   "suits": {},
+   "total": 0
+  },
+  "5": {
+   "suits": {},
+   "total": 0
+  },
+  "6": {
+   "suits": {},
+   "total": 0
+  },
+  "7": {
+   "suits": {},
+   "total": 0
+  },
+  "8": {
+   "suits": {},
+   "total": 0
+  },
+  "9": {
+   "suits": {},
+   "total": 0
+  },
+  "Ace": {
+   "suits": {},
+   "total": 0
+  },
+  "Jack": {
+   "suits": {},
+   "total": 0
+  },
+  "King": {
+   "suits": {},
+   "total": 0
+  },
+  "Queen": {
+   "suits": {},
+   "total": 0
+  }
+ },
+ "chips": 0,
+ "chips_text": "0",
+ "consumeable_buffer": 0,
+ "consumeable_usage": {},
+ "current_boss_streak": 0,
+ "current_round": {
+  "ancient_card": {
+   "suit": "Spades"
+  },
+  "cards_flipped": 0,
+  "castle_card": {
+   "suit": "Spades"
+  },
+  "current_hand": {
+   "chip_text": "0",
+   "chip_total": 0,
+   "chip_total_text": "",
+   "chips": 0,
+   "hand_level": "",
+   "handname": "",
+   "mult": 0,
+   "mult_text": "0"
+  },
+  "discards_left": 0,
+  "discards_used": 0,
+  "dollars": 0,
+  "dollars_to_be_earned": "!!!",
+  "free_rerolls": 0,
+  "hands_left": 0,
+  "hands_played": 0,
+  "idol_card": {
+   "rank": "Ace",
+   "suit": "Spades"
+  },
+  "jokers_purchased": 0,
+  "mail_card": {
+   "rank": "Ace"
+  },
+  "most_played_poker_hand": "High Card",
+  "reroll_cost": 5,
+  "reroll_cost_increase": 0,
+  "round_dollars": 0,
+  "round_text": "Round ",
+  "used_packs": {}
+ },
+ "discount_percent": 0,
+ "dollars": 0,
+ "ecto_minus": 1,
+ "edition_rate": 1,
+ "hand_usage": {},
+ "hands": {
+  "Five of a Kind": {
+   "chips": 120,
+   "example": [
+    [
+     "S_A",
+     true
+    ],
+    [
+     "H_A",
+     true
+    ],
+    [
+     "H_A",
+     true
+    ],
+    [
+     "C_A",
+     true
+    ],
+    [
+     "D_A",
+     true
+    ]
+   ],
+   "l_chips": 35,
+   "l_mult": 3,
+   "level": 1,
+   "mult": 12,
+   "order": 3,
+   "played": 0,
+   "played_this_round": 0,
+   "s_chips": 120,
+   "s_mult": 12,
+   "visible": false
+  },
+  "Flush": {
+   "chips": 35,
+   "example": [
+    [
+     "H_A",
+     true
+    ],
+    [
+     "H_K",
+     true
+    ],
+    [
+     "H_T",
+     true
+    ],
+    [
+     "H_5",
+     true
+    ],
+    [
+     "H_4",
+     true
+    ]
+   ],
+   "l_chips": 15,
+   "l_mult": 2,
+   "level": 1,
+   "mult": 4,
+   "order": 7,
+   "played": 0,
+   "played_this_round": 0,
+   "s_chips": 35,
+   "s_mult": 4,
+   "visible": true
+  },
+  "Flush Five": {
+   "chips": 160,
+   "example": [
+    [
+     "S_A",
+     true
+    ],
+    [
+     "S_A",
+     true
+    ],
+    [
+     "S_A",
+     true
+    ],
+    [
+     "S_A",
+     true
+    ],
+    [
+     "S_A",
+     true
+    ]
+   ],
+   "l_chips": 50,
+   "l_mult": 3,
+   "level": 1,
+   "mult": 16,
+   "order": 1,
+   "played": 0,
+   "played_this_round": 0,
+   "s_chips": 160,
+   "s_mult": 16,
+   "visible": false
+  },
+  "Flush House": {
+   "chips": 140,
+   "example": [
+    [
+     "D_7",
+     true
+    ],
+    [
+     "D_7",
+     true
+    ],
+    [
+     "D_7",
+     true
+    ],
+    [
+     "D_4",
+     true
+    ],
+    [
+     "D_4",
+     true
+    ]
+   ],
+   "l_chips": 40,
+   "l_mult": 4,
+   "level": 1,
+   "mult": 14,
+   "order": 2,
+   "played": 0,
+   "played_this_round": 0,
+   "s_chips": 140,
+   "s_mult": 14,
+   "visible": false
+  },
+  "Four of a Kind": {
+   "chips": 60,
+   "example": [
+    [
+     "S_J",
+     true
+    ],
+    [
+     "H_J",
+     true
+    ],
+    [
+     "C_J",
+     true
+    ],
+    [
+     "D_J",
+     true
+    ],
+    [
+     "C_3",
+     false
+    ]
+   ],
+   "l_chips": 30,
+   "l_mult": 3,
+   "level": 1,
+   "mult": 7,
+   "order": 5,
+   "played": 0,
+   "played_this_round": 0,
+   "s_chips": 60,
+   "s_mult": 7,
+   "visible": true
+  },
+  "Full House": {
+   "chips": 40,
+   "example": [
+    [
+     "H_K",
+     true
+    ],
+    [
+     "C_K",
+     true
+    ],
+    [
+     "D_K",
+     true
+    ],
+    [
+     "S_2",
+     true
+    ],
+    [
+     "D_2",
+     true
+    ]
+   ],
+   "l_chips": 25,
+   "l_mult": 2,
+   "level": 1,
+   "mult": 4,
+   "order": 6,
+   "played": 0,
+   "played_this_round": 0,
+   "s_chips": 40,
+   "s_mult": 4,
+   "visible": true
+  },
+  "High Card": {
+   "chips": 5,
+   "example": [
+    [
+     "S_A",
+     true
+    ],
+    [
+     "D_Q",
+     false
+    ],
+    [
+     "D_9",
+     false
+    ],
+    [
+     "C_4",
+     false
+    ],
+    [
+     "D_3",
+     false
+    ]
+   ],
+   "l_chips": 10,
+   "l_mult": 1,
+   "level": 1,
+   "mult": 1,
+   "order": 12,
+   "played": 0,
+   "played_this_round": 0,
+   "s_chips": 5,
+   "s_mult": 1,
+   "visible": true
+  },
+  "Pair": {
+   "chips": 10,
+   "example": [
+    [
+     "S_K",
+     false
+    ],
+    [
+     "S_9",
+     true
+    ],
+    [
+     "D_9",
+     true
+    ],
+    [
+     "H_6",
+     false
+    ],
+    [
+     "D_3",
+     false
+    ]
+   ],
+   "l_chips": 15,
+   "l_mult": 1,
+   "level": 1,
+   "mult": 2,
+   "order": 11,
+   "played": 0,
+   "played_this_round": 0,
+   "s_chips": 10,
+   "s_mult": 2,
+   "visible": true
+  },
+  "Straight": {
+   "chips": 30,
+   "example": [
+    [
+     "D_J",
+     true
+    ],
+    [
+     "C_T",
+     true
+    ],
+    [
+     "C_9",
+     true
+    ],
+    [
+     "S_8",
+     true
+    ],
+    [
+     "H_7",
+     true
+    ]
+   ],
+   "l_chips": 30,
+   "l_mult": 3,
+   "level": 1,
+   "mult": 4,
+   "order": 8,
+   "played": 0,
+   "played_this_round": 0,
+   "s_chips": 30,
+   "s_mult": 4,
+   "visible": true
+  },
+  "Straight Flush": {
+   "chips": 100,
+   "example": [
+    [
+     "S_Q",
+     true
+    ],
+    [
+     "S_J",
+     true
+    ],
+    [
+     "S_T",
+     true
+    ],
+    [
+     "S_9",
+     true
+    ],
+    [
+     "S_8",
+     true
+    ]
+   ],
+   "l_chips": 40,
+   "l_mult": 4,
+   "level": 1,
+   "mult": 8,
+   "order": 4,
+   "played": 0,
+   "played_this_round": 0,
+   "s_chips": 100,
+   "s_mult": 8,
+   "visible": true
+  },
+  "Three of a Kind": {
+   "chips": 30,
+   "example": [
+    [
+     "S_T",
+     true
+    ],
+    [
+     "C_T",
+     true
+    ],
+    [
+     "D_T",
+     true
+    ],
+    [
+     "H_6",
+     false
+    ],
+    [
+     "D_5",
+     false
+    ]
+   ],
+   "l_chips": 20,
+   "l_mult": 2,
+   "level": 1,
+   "mult": 3,
+   "order": 9,
+   "played": 0,
+   "played_this_round": 0,
+   "s_chips": 30,
+   "s_mult": 3,
+   "visible": true
+  },
+  "Two Pair": {
+   "chips": 20,
+   "example": [
+    [
+     "H_A",
+     true
+    ],
+    [
+     "D_A",
+     true
+    ],
+    [
+     "C_Q",
+     false
+    ],
+    [
+     "H_4",
+     true
+    ],
+    [
+     "C_4",
+     true
+    ]
+   ],
+   "l_chips": 20,
+   "l_mult": 1,
+   "level": 1,
+   "mult": 2,
+   "order": 10,
+   "played": 0,
+   "played_this_round": 0,
+   "s_chips": 20,
+   "s_mult": 2,
+   "visible": true
+  }
+ },
+ "hands_played": 0,
+ "inflation": 0,
+ "interest_amount": 1,
+ "interest_cap": 25,
+ "joker_buffer": 0,
+ "joker_rate": 20,
+ "joker_usage": {},
+ "max_jokers": 0,
+ "modifiers": {},
+ "pack_size": 2,
+ "perishable_rounds": 5,
+ "planet_rate": 4,
+ "playing_card_rate": 0,
+ "pool_flags": {},
+ "previous_round": {
+  "dollars": 4
+ },
+ "probabilities": {
+  "normal": 1
+ },
+ "pseudorandom": {},
+ "rental_rate": 3,
+ "round": 0,
+ "round_bonus": {
+  "discards": 0,
+  "next_hands": 0
+ },
+ "round_resets": {
+  "ante": 1,
+  "blind_ante": 1,
+  "blind_choices": {
+   "Big": "bl_big",
+   "Small": "bl_small"
+  },
+  "blind_states": {
+   "Big": "Upcoming",
+   "Boss": "Upcoming",
+   "Small": "Select"
+  },
+  "boss_rerolled": false,
+  "discards": 1,
+  "hands": 1,
+  "loc_blind_states": {
+   "Big": "",
+   "Boss": "",
+   "Small": ""
+  },
+  "reroll_cost": 1
+ },
+ "round_scores": {
+  "cards_discarded": {
+   "amt": 0,
+   "label": "Cards Discarded"
+  },
+  "cards_played": {
+   "amt": 0,
+   "label": "Cards Played"
+  },
+  "cards_purchased": {
+   "amt": 0,
+   "label": "Cards Purchased"
+  },
+  "furthest_ante": {
+   "amt": 0,
+   "label": "Ante"
+  },
+  "furthest_round": {
+   "amt": 0,
+   "label": "Round"
+  },
+  "hand": {
+   "amt": 0,
+   "label": "Best Hand"
+  },
+  "new_collection": {
+   "amt": 0,
+   "label": "New Discoveries"
+  },
+  "poker_hand": {
+   "amt": 0,
+   "label": "Most Played Hand"
+  },
+  "times_rerolled": {
+   "amt": 0,
+   "label": "Times Rerolled"
+  }
+ },
+ "shop": {
+  "joker_max": 2
+ },
+ "skips": 0,
+ "sort": "desc",
+ "spectral_rate": 0,
+ "stake": 1,
+ "starting_deck_size": 52,
+ "starting_params": {
+  "ante_scaling": 1,
+  "consumable_slots": 2,
+  "discards": 3,
+  "dollars": 4,
+  "erratic_suits_and_ranks": false,
+  "hand_size": 8,
+  "hands": 4,
+  "joker_slots": 5,
+  "no_faces": false,
+  "reroll_cost": 5
+ },
+ "tag_tally": 0,
+ "tags": {},
+ "tarot_rate": 4,
+ "unused_discards": 0,
+ "used_jokers": {},
+ "used_vouchers": {},
+ "voucher_text": "",
+ "win_ante": 8,
+ "won": false
+}
