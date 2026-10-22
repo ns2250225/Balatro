@@ -5,7 +5,12 @@ nuGC = function() end
 
 -- Belt-and-braces for the pairs() ordering fix in love.lua: the UI layout is the one place where
 -- sibling order must match the definition order exactly (pack card areas were laid out off-screen,
--- which disabled the booster-pack skip button). Walk the node list with ipairs unconditionally.
+-- which disabled the booster-pack skip button). Walk the node list by index.
+-- NOTE: this must NOT be ipairs() - UI definition arrays routinely carry mid-array nil holes
+-- (e.g. `G.F_DISCORD and {...} or nil` entries), and ipairs stops at the first hole, dropping
+-- every sibling after it: the main-menu language button ({nil, language}) and the options-menu
+-- Stats/Customize/Credits buttons all vanished that way. LuaJIT pairs() visits array slots in
+-- index order and skips holes, so mirror exactly that.
 do
   local raw_spch = UIBox.set_parent_child
   UIBox.set_parent_child = function(self, node, parent)
@@ -24,8 +29,9 @@ do
 
     --current node is a container
     if (node.n and node.n == G.UIT.C or node.n == G.UIT.R or node.n == G.UIT.ROOT) and node.nodes then
-      for k, v in ipairs(node.nodes) do
-        self:set_parent_child(v, UIE)
+      for k = 1, #node.nodes do
+        local v = node.nodes[k]
+        if v then self:set_parent_child(v, UIE) end
       end
     end
 
