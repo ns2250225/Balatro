@@ -7,6 +7,37 @@ local J = __js
 -------------------------------------------------------------------------------
 unpack = unpack or table.unpack
 loadstring = loadstring or load
+-- fengari iterates table entries in hash-chain order, so pairs() over a Lua
+-- array is NOT in index order (a 3-element array comes out reversed). LuaJIT,
+-- which the original game targets, walks the array part in index order - UI
+-- layouts (UIBox:set_parent_child), scoring loops and event queues depend on
+-- it. Override pairs to iterate exact arrays 1..n in order; every other table
+-- keeps the engine's iteration order. __pairs metamethods still win.
+do
+  local _pairs, _next, _type, _rawget = pairs, next, type, rawget
+  local _rawlen = rawlen or function(t) return #t end
+  local _getmeta = getmetatable
+  pairs = function(t, ...)
+    if _type(t) ~= 'table' then return _pairs(t, ...) end
+    local mt = _getmeta(t)
+    if mt and mt.__pairs then return _pairs(t, ...) end
+    local n = _rawlen(t)
+    if n < 1 then return _pairs(t, ...) end
+    -- only take over when the table is an exact array (keys are 1..n, no holes, no extra keys)
+    local is_array, seen, k = true, 0, _next(t)
+    while k do
+      if _type(k) == 'number' and k % 1 == 0 and k >= 1 and k <= n then seen = seen + 1
+      else is_array = false break end
+      k = _next(t, k)
+    end
+    if not is_array or seen ~= n then return _pairs(t, ...) end
+    local i = 0
+    return function(tt)
+      i = i + 1
+      if i <= n then return i, _rawget(tt, i) end
+    end, t, nil
+  end
+end
 math.pow = math.pow or function(a, b) return a ^ b end
 math.mod = math.mod or math.fmod
 math.log10 = math.log10 or function(x) return math.log(x, 10) end
